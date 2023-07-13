@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
 }
 
 @mixin flex($type) {
@@ -10,15 +9,54 @@
     align-items: $type;
 }
 
+@mixin line($width, $height) {
+    width: $width;
+    border-radius: 100px;
+    max-height: $height;
+    background: #FFF;
+}
+
+@mixin font {
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+@mixin button($type) {
+    outline: none;
+    margin: 0;
+    background-color: transparent;
+    border: solid 2px black;
+    border-radius: $type;
+    color: #00d9ff;
+    font-weight: bolder;
+    transition: all 0.5s ease;
+}
+
+@mixin block {
+    display: flex;
+    gap: 5%;
+    margin-top: 3%;
+    padding: 5% 5% 5% 5%;
+}
+
+@mixin content_block($width) {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    width: $width;
+    font-family: 'Mont', sans-serif;
+}
+
 body {
     display: flex;
-    padding: 5% 3% 0 3%;
+    padding: 2% 3% 0 3%;
     min-height: 100vh;
     flex-direction: column;
     gap: 20px;
 }
 
 header {
+    font-family: 'Montserrat', sans-serif;
     @include flex(center);
     min-width: 100%;
     gap: 10%;
@@ -31,12 +69,11 @@ header {
         @include flex(center);
         width: 100%;
         button {
-            white-space: nowrap;
+            @include font();
             text-align: center;
-            text-decoration: none;
             color: rgba(0, 0, 0, 0.384);
             padding: 0 5% 0 5%;
-            font-weight: 900;
+            font-weight: 600;
             border: none;
             outline: none;
             margin: 0;
@@ -64,18 +101,21 @@ header {
         }
     }
     button {
-        border: solid 2px black;
-        border-radius: 5px;
-        color: #00d9ff;
-        font-weight: bolder;
-        outline: none;
-        margin: 0;
-        background-color: transparent;
-        transition: all 0.5s ease;
+        @include button(8px);
     }
     button:hover {
         color: white;
         background-color: #00d9ff;
+    }
+}
+
+main {
+    h1 {
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        font-family: 'Montserrat', sans-serif;
     }
 }
 
@@ -84,12 +124,14 @@ header {
         color: #0000004d;
         text-align: end;
         width: 100%;
+        font-weight: bolder;
         border-bottom: solid 2px black;
     }
 }
 
 .block {
     @include flex(center);
+    font-family: 'Montserrat', sans-serif;
     flex-direction: column;
     gap: 4%;
     margin-top: 2%;
@@ -104,9 +146,143 @@ header {
 }
 
 .block2 {
-    margin-top: 5%;
-    display: flex;
-    background-color: black;
+    @include block();
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(180deg, #0C0D0F 0%, #1E1E1E 100%);
     color: white;
     padding: 5% 5% 5% 5%;
+    .line {
+        @include line(0.4%, 655px);
+    }
+    .text {
+        display: flex;
+        width: 100%;
+        gap: 5%;
+        flex-direction: column;
+        .main-text {
+            display: flex;
+            flex-direction: column;
+            padding: 0 0 3% 0;
+            border-bottom: solid 2px #FFF;
+            h1 {
+                padding: 0 0 2% 0;
+            }
+        }
+        .second-text {
+            display: flex;
+            width: 100%;
+            gap: 5%;
+            .plan {
+                @include font();
+                display: flex;
+                flex-direction: column;
+                h2 {
+                    font-size: calc(24px + 8 * (100vw - 320px) / 880);
+                    padding: 0 0 5% 0;
+                }
+            }
+            .train {
+                max-width: 50%;
+                h2 {
+                    font-size: calc(24px + 8 * (100vw - 320px) / 880);
+                    padding: 0 0 1.5% 0;
+                }
+            }
+        }
+    }
+}
+
+.block3 {
+    max-width: 1440px;
+    @include block();
+    .line {
+        @include line(0.4%, 655px);
+        background-color: #0C0D0F;
+    }
+    .content {
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        h1 {
+            padding: 0 0 4% 0;
+            font-size: calc(35px + 10 * (100vw - 320px) / 880);
+        }
+        .list {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            @include font();
+            button {
+                @include button(none);
+                padding: 0 2% 0 2%;
+                font-family: 'Montserrat', sans-serif;
+                border: none;
+                color: #0c0d0f;
+                border-bottom: solid 2px black;
+                transition: all 1s ease;
+            }
+            button:hover {
+                background-color: #0C0D0F;
+                color: #FFF;
+            }
+            button:nth-child(1):hover {
+                border-top-left-radius: 8px;
+            }
+            button:nth-child(6):hover {
+                border-top-right-radius: 8px;
+            }
+        }
+        .info-blocks {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 4%;
+            width: 100%;
+            gap: 5%;
+            .first {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                flex: 0 1 10%;
+                gap: 10px;
+                .text {
+                    display: flex;
+                    font-size: calc(4px + 8 * (100vw - 320px) / 880);
+                    color: #0C0D0F;
+                    font-weight: 700;
+                }
+            }
+        }
+        .info {
+            @include content_block(auto);
+            @include font();
+            padding: 5% 5% 5% 5%;
+            margin: 0 5% 0 10px;
+            border: solid 1.5px black;
+            width: 100%;
+            h2 {
+                font-size: calc(7px + 8 * (100vw - 320px) / 880);
+            }
+            .numerals {
+                display: flex;
+                align-items: center;
+                gap: 2%;
+                h1 {
+                    font-size: calc(20px + 8 * (100vw - 320px) / 880);
+                    padding: 0 0 0 0;
+                }
+                h2 {
+                    font-size: calc(20px + 8 * (100vw - 320px) / 880);
+                    color: #00d9ff;
+                }
+            }
+            .graph {
+                display: flex;
+                align-items: center;
+                color: #00d9ff;
+                font-size: calc(5px + 8 * (100vw - 320px) / 880);
+            }
+        }
+    }
 }
