@@ -19,11 +19,11 @@
 <img align="center" width="300px" src="https://github.com/C0vpy4/c0vpy4.github.io/assets/100491011/3eb56921-d83c-43ba-8ae6-bd2923038f5a">
 <h3 margin-left="10px">4. Create a backend</h3>
 <span align="center"><img width="200px" src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)"></span>
-<h1>Supprt us:</h1>
+<h3>Support us:</h1>
 <div align="center">
-  <a href="38k1Sss5rvDqXdxGxK7Lycsfg8buJnzpQ4"><img src="https://img.shields.io/badge/Bitcoin-000?style=for-the-badge&logo=bitcoin&logoColor=white"></a>
-  <a href="0x13d03702A6b33a19F9e62Ae00E59Aa8edc10835d"><img src="https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=white"></a>
-  <a href=" ltc1q8glqhnw2hcjxfzpc52m74g7ftf400gujym4w7z"><img src="https://img.shields.io/badge/Litecoin-A6A9AA?style=for-the-badge&logo=Litecoin&logoColor=white"></a>
+  <a width="200px"href="38k1Sss5rvDqXdxGxK7Lycsfg8buJnzpQ4"><img src="https://img.shields.io/badge/Bitcoin-000?style=for-the-badge&logo=bitcoin&logoColor=white"></a>
+  <a width="200px" href="0x13d03702A6b33a19F9e62Ae00E59Aa8edc10835d"><img src="https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=white"></a>
+  <a width="200px" href=" ltc1q8glqhnw2hcjxfzpc52m74g7ftf400gujym4w7z"><img src="https://img.shields.io/badge/Litecoin-A6A9AA?style=for-the-badge&logo=Litecoin&logoColor=white"></a>
 </div>
 <h4 align="center">Goodbye my friend</h4>
 
