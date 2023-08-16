@@ -9,7 +9,7 @@
   <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white">
 </div>
 <h2 color="#ff9000">We have a plan:</h2>
-<h3 margin-left="10px">1. Create a main page</h3>
+<h3 margin-left="10px" color="#ff9000">1. Create a main page</h3>
 <img align="center" src="https://github.com/C0vpy4/c0vpy4.github.io/assets/100491011/b6aeabc0-b598-4969-890b-303c805e4db2">
 <h3 margin-left="10px">2. Create a second page</h3>
 <img align="center" src="https://github.com/C0vpy4/c0vpy4.github.io/assets/100491011/bf9c8342-a441-413e-9a70-35b7d46f467b">
