@@ -2,5 +2,5 @@
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 <h3 align="center">You can find so more anime and manga, without code</h3>
 <h1 align="center"> We use:</h1>
-<div display="flex "justify-content="center" align-items="center"><img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"></div>
+<div display="flex" justify-content="center" align-items="center"><img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"></div>
 
