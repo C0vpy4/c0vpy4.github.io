@@ -21,14 +21,13 @@ document.addEventListener('wheel', function(event) {
 
 });
 
-y = 0
 
 function btnClick() {
-    y = y + 1;
-    if (y > 2) {
-        y = 0
+    count = count + 1;
+    if (count > 2) {
+        count = 0
     }
-    setBg(y)
+    setBg(count)
 }
 async function setBg(count) {
     var box = document.getElementsByClassName("box")[0];
