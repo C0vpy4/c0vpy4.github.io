@@ -18,5 +18,5 @@
 <img align-items="center" width="300px" src="https://github.com/C0vpy4/c0vpy4.github.io/assets/100491011/213608df-bc9e-46e1-8852-a7546f830435">
 <img align-items="center" width="300px" src="https://github.com/C0vpy4/c0vpy4.github.io/assets/100491011/3eb56921-d83c-43ba-8ae6-bd2923038f5a">
 <h3 margin-left="10px">1. Create a backend</h3>
-<img width="200px" src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)">
+<img width="200px" align="center" src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)">
 
