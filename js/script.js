@@ -7,13 +7,13 @@ document.addEventListener('wheel', function(event) {
     if (y > 0) {
         count = count + 1;
         if (count > 2) {
-            count = 2
+            count = 0
         }
     }
     if (y < 0) {
         count = count - 1;
         if (count < 0) {
-            count = 0
+            count = 2
         }
     }
     setBg(count)
@@ -42,8 +42,9 @@ async function setBg(count) {
         document.body.style.backgroundImage = "url('./img/back2.png')";
         box.style.top = (currentTop - 1000) + 'px';
     }
-    if (count === 2 | count > 2) {
+    if (count === 2) {
         document.body.style.backgroundImage = "url('./img/back3.png')";
+        box.style.top = (currentTop - 1000) + 'px';
     }
 
 }
