@@ -2,4 +2,4 @@
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 <h3 align="center">You can find so more anime and manga, without code</h3>
 <h1 align="center"> We use:</h1>
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=c0vpy4a&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+![](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=daniilshat&theme=solarized_dark)
