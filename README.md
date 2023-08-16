@@ -9,5 +9,5 @@
   <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white">
 </div>
 <h1>About me:</h1>
-<img align="center" src="https://github-readme-stats.vercel.app/api?username=C0vpy4">
+<img align="center" src="https://github-readme-stats.vercel.app/api?username=C0vpy4&show_icons=true&theme=transparent">
 
