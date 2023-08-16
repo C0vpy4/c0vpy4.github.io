@@ -1,0 +1,64 @@
+@import './mixins.scss';
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url('../../img/back1.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    image-rendering: optimizeSpeed;
+    overflow: hidden;
+    transition: background 0.5s ease;
+}
+
+main {
+    @include center;
+    transform: none;
+    min-height: 100vh;
+    .box {
+        transition: top 1s ease;
+        position: absolute;
+        @include box;
+        .text {
+            @include text;
+            .main-text {
+                @include main-text;
+            }
+            .second-text {
+                @include second-text;
+            }
+        }
+    }
+    button {
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        padding: 0;
+        border: none;
+        font: inherit;
+        color: inherit;
+        background-color: transparent;
+        /* отображаем курсор в виде руки при наведении; некоторые
+  считают, что необходимо оставлять стрелочный вид для кнопок */
+        cursor: pointer;
+        animation: button_first_anim 2s cubic-bezier(0.34, 0.31, 0.53, 1.19);
+        svg {
+            path:nth-child(1) {
+                transition: all 0.3s ease;
+                &:hover {
+                    fill-opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+@keyframes button_first_anim {
+    0% {
+        bottom: -90px;
+    }
+}
