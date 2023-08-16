@@ -22,8 +22,8 @@
 <h3>Support us:</h1>
 <div align="center" height="150px" width="100px">
   <a href="38k1Sss5rvDqXdxGxK7Lycsfg8buJnzpQ4"><img height="50px"src="https://img.shields.io/badge/Bitcoin-000?style=for-the-badge&logo=bitcoin&logoColor=white"></a>
-  <a href="0x13d03702A6b33a19F9e62Ae00E59Aa8edc10835d"><img height="50px" src="https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=white"></a>
-  <a href=" ltc1q8glqhnw2hcjxfzpc52m74g7ftf400gujym4w7z"><img height="50px" src="https://img.shields.io/badge/Litecoin-A6A9AA?style=for-the-badge&logo=Litecoin&logoColor=white"></a>
+  <a href="0x13d03702A6b33a19F9e62Ae00E59Aa8edc10835d"><img height="40px" src="https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=white"></a>
+  <a href=" ltc1q8glqhnw2hcjxfzpc52m74g7ftf400gujym4w7z"><img height="40px" src="https://img.shields.io/badge/Litecoin-A6A9AA?style=for-the-badge&logo=Litecoin&logoColor=white"></a>
 </div>
 <h4 align="center">Goodbye my friend</h4>
 
