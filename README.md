@@ -1,4 +1,4 @@
 <h1 align="center">Welcome to <a href="[https://daniilshat.ru/](https://c0vpy4.github.io)" target="_blank">Anime.drop</a> 
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 <h3 align="center">You can find so more anime and manga, without code</h3>
-[![GitHub Streak](https://streak-stats.demolab.com?user=C0vpy4&theme=dark&hide_border=true)](https://git.io/streak-stats)[![GitHub Streak](https://streak-stats.demolab.com?user=C0vpy4&theme=dark&hide_border=true)](https://git.io/streak-stats)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=DenverCoder1)](https://git.io/streak-stats)
