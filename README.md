@@ -8,4 +8,6 @@
   <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
   <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white">
 </div>
+<h1>About me:</h1>
+<img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=C0vpy4">
 
