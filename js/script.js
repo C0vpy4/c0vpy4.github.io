@@ -21,7 +21,6 @@ document.addEventListener('wheel', function(event) {
 
 });
 
-
 function btnClick() {
     count = count + 1;
     if (count > 2) {
@@ -29,6 +28,7 @@ function btnClick() {
     }
     setBg(count)
 }
+
 async function setBg(count) {
     var box = document.getElementsByClassName("box")[0];
     var currentTop = parseInt(box.style.top) || 0;
@@ -48,3 +48,13 @@ async function setBg(count) {
     }
 
 }
+
+function fixBox() {
+    var box = document.getElementsByClassName("box")[0];
+    var currentTop = parseInt(box.style.top) || 0;
+    var windowHeight = window.innerHeight;
+    var initialTop = (windowHeight / 2) - (box.offsetHeight / 2); // Вычисляем изначальную позицию по вертикали на середину экрана
+    box.style.top = initialTop + 'px'; // Применяем изначальную позицию
+}
+
+window.onload(fixBox())
