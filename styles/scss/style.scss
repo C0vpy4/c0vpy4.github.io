@@ -2,6 +2,7 @@
 * {
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 body {
@@ -11,13 +12,12 @@ body {
     -o-background-size: cover;
     background-size: cover;
     image-rendering: optimizeSpeed;
-    overflow: hidden;
     transition: background 0.5s ease;
+    @include center;
 }
 
 main {
     @include center;
-    transform: none;
     min-height: 100vh;
     .box {
         transition: top 1s ease;
@@ -36,7 +36,6 @@ main {
     button {
         position: absolute;
         bottom: 0;
-        left: 45%;
         padding: 0;
         border: none;
         font: inherit;
@@ -58,5 +57,28 @@ main {
 @keyframes button_first_anim {
     0% {
         bottom: -90px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    main {
+        .box {
+            @include box(95%,
+            500px,
+            50px);
+            .text {
+                .main-text {
+                    white-space: wrap;
+                    @include main-text(35px)
+                }
+                .second-text {
+                    @include second-text(25px)
+                }
+            }
+        }
+        button {
+            bottom: 0;
+            padding: 0;
+        }
     }
 }
