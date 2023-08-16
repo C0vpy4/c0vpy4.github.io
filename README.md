@@ -19,5 +19,6 @@
 <img align="center" width="300px" src="https://github.com/C0vpy4/c0vpy4.github.io/assets/100491011/3eb56921-d83c-43ba-8ae6-bd2923038f5a">
 <h3 margin-left="10px">4. Create a backend</h3>
 <span align="center"><img width="200px" src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)"></span>
-<h1>Supprt us:</h1><img src="https://github.com/blackcater/blackcater/blob/main/images/banner.gif" height="32px">
+<h1>Supprt us:</h1>
+<img src="https://github.com/blackcater/blackcater/blob/main/images/banner.gif" height="32px">
 
