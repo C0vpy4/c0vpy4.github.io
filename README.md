@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
   <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white">
 </div>
-<h2 color="orange">We have a plan:</h2>
+<h2 color="rgb(255, 115, 0)">We have a plan:</h2>
 <h3 margin-left="10px">1. Create a main page</h3>
 <img align="center" src="https://github.com/C0vpy4/c0vpy4.github.io/assets/100491011/b6aeabc0-b598-4969-890b-303c805e4db2">
 <h3 margin-left="10px">2. Create a second page</h3>
