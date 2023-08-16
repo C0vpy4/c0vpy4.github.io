@@ -10,7 +10,7 @@
 </div>
 <h2>We have a plan:</h2>
 <h3 margin-left="10px">1. Create a main page</h3>
-<img align-items="center" border-radius="25px" src="https://github.com/C0vpy4/c0vpy4.github.io/assets/100491011/b6aeabc0-b598-4969-890b-303c805e4db2">
+<img align-items="center" radius="25px" src="https://github.com/C0vpy4/c0vpy4.github.io/assets/100491011/b6aeabc0-b598-4969-890b-303c805e4db2">
 <h3 margin-left="10px">2. Create a second page</h3>
 <img align-items="center" src="https://github.com/C0vpy4/c0vpy4.github.io/assets/100491011/bf9c8342-a441-413e-9a70-35b7d46f467b">
 <h3 margin-left="10px">1. Create a mobile version</h3>
