@@ -21,7 +21,7 @@
 <div align="center"><img width="200px" src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)"></div>
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Ubuntu&size=30&pause=1000&width=435&lines=Support+us%3A" alt="Typing SVG" /></a>
 <div align="center" height="150px" width="100px">
-  <a href="38k1Sss5rvDqXdxGxK7Lycsfg8buJnzpQ4"><img height="49px"src="https://img.shields.io/badge/Bitcoin-000?style=for-the-badge&logo=bitcoin&logoColor=white"></a>
+  <a href="Xs8Qr5EiQnfnjec6YkQJQxY44rMpP8w9km"><img height="49px"src="https://img.shields.io/badge/dash-008DE4?style=for-the-badge&logo=dash&logoColor=white"></a>
   <a href="0x13d03702A6b33a19F9e62Ae00E59Aa8edc10835d"><img height="48.5px" src="https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=white"></a>
   <a href="ltc1q8glqhnw2hcjxfzpc52m74g7ftf400gujym4w7z"><img height="48.5px" src="https://img.shields.io/badge/Litecoin-A6A9AA?style=for-the-badge&logo=Litecoin&logoColor=white"></a>
    <a href="bitcoincash:qpg9e2r4tc5t52mnc6ksl5gdd9kk2f2c2uh4pq6jwa"><img height="48.5px" src="https://img.shields.io/badge/Bitcoin%20Cash-0AC18E?style=for-the-badge&logo=Bitcoin%20Cash&logoColor=white"></a>
