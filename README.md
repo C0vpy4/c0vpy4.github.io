@@ -14,7 +14,7 @@
 <h3 margin-left="10px">2. Create a second page</h3>
 <img align-items="center" src="https://github.com/C0vpy4/c0vpy4.github.io/assets/100491011/bf9c8342-a441-413e-9a70-35b7d46f467b">
 <h3 margin-left="10px">1. Create a mobile version</h3>
-<img align-items="center" width="500px" src="https://github.com/C0vpy4/c0vpy4.github.io/assets/100491011/b9925dc2-ee9a-4acd-be98-d3c8a776220f">
+<img align-items="center" width="300px" src="https://github.com/C0vpy4/c0vpy4.github.io/assets/100491011/b9925dc2-ee9a-4acd-be98-d3c8a776220f">
 <img align-items="center" src="https://github.com/C0vpy4/c0vpy4.github.io/assets/100491011/213608df-bc9e-46e1-8852-a7546f830435">
 <img align-items="center" src="https://github.com/C0vpy4/c0vpy4.github.io/assets/100491011/3eb56921-d83c-43ba-8ae6-bd2923038f5a">
 <h3 margin-left="10px">1. Create a backend</h3>
