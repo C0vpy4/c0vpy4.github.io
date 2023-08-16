@@ -42,8 +42,6 @@ main {
         font: inherit;
         color: inherit;
         background-color: transparent;
-        /* отображаем курсор в виде руки при наведении; некоторые
-  считают, что необходимо оставлять стрелочный вид для кнопок */
         cursor: pointer;
         animation: button_first_anim 2s cubic-bezier(0.34, 0.31, 0.53, 1.19);
         svg {
