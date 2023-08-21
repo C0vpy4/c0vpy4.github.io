@@ -29,7 +29,7 @@ function btnClick() {
     }
 }
 
-function setBg(count) {
+async function setBg(count) {
     var box = document.getElementsByClassName("box")[0];
     var currentTop = parseInt(box.style.top) || 0;
     var windowHeight = window.innerHeight;
