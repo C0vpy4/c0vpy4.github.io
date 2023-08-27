@@ -1,42 +1,28 @@
 let count = 0;
 document.addEventListener('wheel', function(event) {
-    setBg(count)
-    var y = event.deltaY || event.detail || event.wheelDelta,
-        val = 0.1,
-        min = 0,
-        max = 0;
+    setBg(count);
+    const y = event.deltaY || event.detail || event.wheelDelta;
+
     if (y > 0) {
-        count = count + 1;
-        if (count > 2) {
-            count = 0
-        }
+        count = (count + 1) % 3;
+    } else if (y < 0) {
+        count = (count - 1 + 3) % 3;
     }
-    if (y < 0) {
-        count = count - 1;
-        if (count < 0) {
-            count = 2
-        }
-    }
-
-
 });
 
 function btnClick() {
-    setBg(count)
-    count = count + 1;
-    if (count > 2) {
-        count = 0
-    }
+    setBg(count);
+    count = (count + 1) % 3;
 }
 
 async function setBg(count) {
-    var box = document.getElementsByClassName("box")[0];
-    var currentTop = parseInt(box.style.top) || 0;
-    var windowHeight = window.innerHeight;
-    var initialTop = (windowHeight / 2) - (box.offsetHeight / 2); // Вычисляем изначальную позицию по вертикали на середину экрана
+    const box = document.getElementsByClassName("box")[0];
+    const currentTop = parseInt(box.style.top) || 0;
+    const windowHeight = window.innerHeight;
+    const initialTop = (windowHeight / 2) - (box.offsetHeight / 2);
 
-    var imgUrl = "";
-    var topPosition = currentTop - 1000;
+    let imgUrl = "";
+    let topPosition = currentTop - 1000;
 
     if (count === 0) {
         imgUrl = "./img/back1.png";
@@ -47,14 +33,10 @@ async function setBg(count) {
         imgUrl = "./img/back3.png";
     }
 
-    document.body.style.backgroundImage = "url('" + imgUrl + "')";
-    box.style.top = topPosition + 'px';
+    const image = new Image();
+    image.src = imgUrl;
+    image.addEventListener('load', function() {
+        document.body.style.backgroundImage = "url('" + imgUrl + "')";
+        box.style.top = topPosition + 'px';
+    });
 }
-
-// async function fixBox() {
-//     var box = document.getElementsByClassName("box")[0];
-//     var currentTop = parseInt(box.style.top) || 0;
-//     var windowHeight = window.innerHeight;
-//     var initialTop = (windowHeight / 2) - (box.offsetHeight / 2); // Вычисляем изначальную позицию по вертикали на середину экрана
-//     box.style.top = initialTop + 'px'; // Применяем изначальную позицию
-// }
