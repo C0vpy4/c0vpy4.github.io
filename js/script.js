@@ -1,13 +1,19 @@
 let count = 0;
 document.addEventListener('wheel', function(event) {
-    setBg(count);
     const y = event.deltaY || event.detail || event.wheelDelta;
 
     if (y > 0) {
         count = (count + 1) % 3;
+        console.log("Up" + count)
     } else if (y < 0) {
-        count = (count - 1 + 3) % 3;
+        count = (count - 1) % 3;
+        console.log("Down" + count)
     }
+    if (count <= -1){
+        count = 2
+    }
+    setBg(count);
+    console.log("First count" + count)
 });
 
 function btnClick() {
@@ -23,15 +29,11 @@ async function setBg(count) {
 
     let imgUrl = "";
     let topPosition = currentTop - 1000;
-
-    if (count === 0) {
-        imgUrl = "./img/back1.png";
+    
+    if (count === 0){
         topPosition = initialTop;
-    } else if (count === 1) {
-        imgUrl = "./img/back2.png";
-    } else if (count === 2) {
-        imgUrl = "./img/back3.png";
     }
+    imgUrl = `./img/back${count}.png`
 
     const image = new Image();
     image.src = imgUrl;
@@ -39,4 +41,5 @@ async function setBg(count) {
         document.body.style.backgroundImage = "url('" + imgUrl + "')";
         box.style.top = topPosition + 'px';
     });
+    console.log(count);
 }
