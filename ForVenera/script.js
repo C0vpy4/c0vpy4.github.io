@@ -29,9 +29,6 @@ document.querySelector(".variants").addEventListener('click', e => {
             e.target.style.border = 'green';
             e.target.style.color = 'white';
             e.target.style.pointerEvents = 'none';
-            var errorDiv = document.createElement("div");
-            errorDiv.className = "error";
-            document.body.appendChild(errorDiv);
             var textDiv = document.createElement("div");
             textDiv.className = "textBox";
 
@@ -88,9 +85,6 @@ document.querySelector(".variants").addEventListener('click', e => {
         }
 
         if (error == 100) {
-            var errorDiv = document.createElement("div");
-            errorDiv.className = "error";
-            document.body.appendChild(errorDiv);
             setTimeout(setElementError, 1000)
         }
     }
