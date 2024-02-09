@@ -3,14 +3,14 @@
     margin: 0;
 }
 
+html, body {height:100%;}
+html {display:table; width:100%;transition: all .5s ease;}
 body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
     flex-direction: column;
-    gap: 20px;
-    transition: all .5s ease;
+    gap: 2%;
     background: linear-gradient(to top, #111111 0%, #ffffff 0%);
     overflow: hidden;
 }
@@ -20,8 +20,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10%;
     text-align: center;
+    gap: 10%;
 }
 
 .variants p {
@@ -54,8 +54,8 @@ body {
 .textBox {
     position: absolute;
     background-color: #111111;
-    height: 100%;
-    width: 100%;
+    min-height: 100vh;
+    width: 110%;
     display: flex;
     justify-content: center;
     align-items: center;
