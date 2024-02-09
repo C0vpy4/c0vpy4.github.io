@@ -85,6 +85,7 @@ document.querySelector(".variants").addEventListener('click', e => {
         }
 
         if (error == 100) {
+            document.body.style.backgroundColor = "#111111"
             setTimeout(setElementError, 1000)
         }
     }
