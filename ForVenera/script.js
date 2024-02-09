@@ -29,6 +29,26 @@ document.querySelector(".variants").addEventListener('click', e => {
             e.target.style.border = 'green';
             e.target.style.color = 'white';
             e.target.style.pointerEvents = 'none';
+            var textDiv = document.createElement("div");
+            textDiv.className = "textBox";
+
+            var pElement = document.createElement("div");
+            pElement.className = "text"
+            pElement.innerHTML = "You Win";
+            pElement.style.color = "green"
+            textDiv.appendChild(pElement);
+
+            function locationReload(){
+                location.reload();
+            }
+            var svgReload = document.createElement("img");
+            svgReload.src = "./img/Rel.svg";
+            svgReload.onclick =  locationReload;
+            pElement.appendChild(svgReload)
+
+
+            // Добавляем errorDiv внутрь тега body
+            document.body.appendChild(textDiv);
         } else {
             e.target.style.background = 'red';
             e.target.style.border = 'red';
@@ -63,22 +83,34 @@ document.querySelector(".variants").addEventListener('click', e => {
         if (error == 50) {
             document.querySelector(".variants").style.color = "white";
         }
-        if(error == 10000){
+
+        if (error == 100) {
             var errorDiv = document.createElement("div");
             errorDiv.className = "error";
-
-            // Создаем p элемент и добавляем его внутрь errorDiv
-            var pElement = document.createElement("p");
-            errorDiv.appendChild(pElement);
-
-            // Создаем div элемент с классом "text" и добавляем его внутрь errorDiv
-            var textDiv = document.createElement("div");
-            textDiv.className = "text";
-            errorDiv.appendChild(textDiv);
-
-            // Добавляем errorDiv внутрь тега body
             document.body.appendChild(errorDiv);
+            setTimeout(setElementError, 1000)
         }
+    }
+    function setElementError() {
+        var textDiv = document.createElement("div");
+        textDiv.className = "textBox";
+
+        var pElement = document.createElement("div");
+        pElement.className = "text"
+        pElement.innerHTML = "You lose";
+        textDiv.appendChild(pElement);
+
+        function locationReload(){
+            location.reload();
+        }
+        var svgReload = document.createElement("img");
+        svgReload.src = "./img/Rel.svg";
+        svgReload.onclick =  locationReload;
+        pElement.appendChild(svgReload)
+
+
+        // Добавляем errorDiv внутрь тега body
+        document.body.appendChild(textDiv);
     }
 
 });

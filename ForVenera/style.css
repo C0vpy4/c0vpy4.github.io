@@ -35,3 +35,64 @@ body {
     color: white;
     cursor: pointer;
 }
+
+/* .error {
+    color: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 15%;
+    filter: blur(10px);
+    -webkit-backdrop-filter: blur(32px);
+    backdrop-filter: blur(32px);
+    z-index: 0;
+    transition: all .5s ease;
+} */
+
+.textBox {
+    position: absolute;
+    background-color: #111111;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #f84b4b;
+    font-size: 32px;
+    border-radius: 8px;
+    animation: animationTextError 1s ease;
+    opacity: 100%;
+    transform: rotate(0);
+    /* box-shadow: 1px 1px 15px 10px #222222; */
+    /* filter: drop-shadow(-5px -5px 450px #f84b4b);  */
+}
+
+img{
+    width: 8%;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.textBox:hover{
+    transform: rotate(360deg);
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 100%;
+    animation: animationTextError 5s ease;
+}
+
+@keyframes animationTextError {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
