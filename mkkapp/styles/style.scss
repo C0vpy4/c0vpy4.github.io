@@ -1,0 +1,404 @@
+@import "./mixins.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --root-base---on-light: #06070b;
+    --root-base---on-dark: #fbfbfc;
+    --root-faint---on-light: #8a93a6;
+    --root-faint---on-dark: #8e939d;
+    --root-accent---on-light: #0250ee;
+    --root-accent---on-dark: #2b68e3;
+    --root-critic---on-light: #ec524a;
+    --root-critic---on-dark: #c24a44;
+    --root-warning---on-light: #ffe014;
+    --root-warning---on-dark: #d8c020;
+    --root-success---on-light: #3be155;
+    --root-success---on-dark: #3abc4f;
+    --root-complement-1---on-light: #6556d9;
+    --root-complement-1---on-dark: #6556d9;
+    --root-complement-2---on-light: #00f0ff;
+    --root-complement-2---on-dark: #00f0ff;
+    --grad: #9b928e;
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Inter", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    background: url("../img/objects.png") no-repeat center center;
+    background-size: cover;
+    background-color: #03070f;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    overflow-x: hidden;
+    transition: all 0.5s ease;
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .main--section {
+        @include center; // смотреть в mixins.scss
+        position: relative;
+        min-height: 100vh;
+        img {
+            position: absolute;
+            margin-top: 15%;
+            right: 0;
+        }
+        .section--content {
+            @include center(column, center, center);
+            position: relative;
+            gap: 41px;
+            margin: 0 46px 0 0;
+            padding: 0 20% 0 0;
+            h1 {
+                @include font(800, 64px);
+                z-index: 2;
+            }
+            .content--container {
+                @include center(column);
+                @include size(721px, 397px);
+                @include content--container;
+                .container--text {
+                    @include container--text;
+                    animation: opacityText 1s ease;
+                }
+                .container--elements {
+                    @include center;
+                    width: 100%;
+                    .elements--button {
+                        @include element--button;
+                        &:hover {
+                            box-shadow:
+                                1px -2px 10px 0 #009bcc,
+                                -1px 2px 10px 0 #ff00f5;
+                            background-color: rgba(217, 217, 217, 0.3);
+                        }
+                        &:hover svg path {
+                            fill: rgb(0, 225, 255);
+                        }
+                    }
+                    .elements--points {
+                        @include center(row, center, center, 12px);
+                        position: absolute;
+                        bottom: 0;
+                        margin: 0 0 22px 0;
+                        width: 100%;
+                        .circl {
+                            @include size(20px, 15px, 15px);
+                            border-radius: 100%;
+                            background-color: rgba(255, 255, 255, 0.1);
+                            filter: blur(0.5px);
+                            transition: all 0.5s ease;
+                        }
+                        .slide {
+                            background-color: rgba(255, 255, 255, 0.6);
+                        }
+                    }
+                }
+            }
+        }
+        img {
+            z-index: 1;
+        }
+    }
+    .main--section--offers {
+        @include center(column);
+        position: relative;
+        margin-top: 120px;
+        h1 {
+            @include font(700, 64px);
+        }
+        .section--offers--content {
+            @include size(1260px, 650px);
+            @include center(column);
+            @include content--container;
+            margin-top: 87px;
+            .content--container {
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                grid-template-columns: repeat(3, 300px);
+                gap: 10%;
+                .container--text--contain {
+                    display: grid;
+                    grid-template-rows: repeat(4, 100px);
+                    margin-top: 87px;
+                    .text {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 20px;
+                        width: 100%;
+                        cursor: pointer;
+                        &:hover p {
+                            color: rgba(255, 255, 255, 0.7);
+                        }
+                        &:hover svg {
+                            transform: rotate(90deg);
+                        }
+                        p {
+                            margin-top: 40px;
+                            font-family: var(--font-family);
+                            font-weight: 600;
+                            font-size: 32px;
+                            color: rgba(255, 255, 255, 0.5);
+                            transition: all 0.2s ease;
+                        }
+                        svg {
+                            width: 30px;
+                            height: 30px;
+                            transition: all 0.5s ease;
+                        }
+                    }
+                }
+            }
+            .section--offers-elements {
+                .elements--button {
+                    @include element--button;
+                    margin-left: 1000px;
+                    &:hover {
+                        box-shadow:
+                            1px -2px 10px 0 #009bcc,
+                            -1px 2px 10px 0 #ff00f5;
+                        background-color: rgba(217, 217, 217, 0.3);
+                    }
+                    &:hover svg path {
+                        fill: rgb(0, 225, 255);
+                    }
+                }
+                .elements--slide {
+                    width: 100%;
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+        h2 {
+            @include font(700, 48px);
+            position: absolute;
+            text-wrap: nowrap;
+            margin: 2.8% 1000px 35% 399px;
+            z-index: 3;
+            &::before,
+            &::after {
+                content: "";
+                position: fixed;
+                margin: 2.8% 0 0 19%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                display: block;
+            }
+        }
+    }
+    .main--section--form {
+        @include center(column);
+        position: relative;
+        margin-top: 120px;
+        h1 {
+            @include font(700, 64px);
+        }
+        .section--form--content {
+            @include size(1260px, 585px);
+            @include content--container;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: repeat(2, 50vh);
+            margin-top: 87px;
+            .content--form {
+                @include center(column);
+                gap: 33px;
+                .form--inputs {
+                    @include center(column);
+                    gap: 20px;
+                    input {
+                        @include size(463px, 59px, 463px);
+                        border-radius: 30px;
+                        border: none;
+                        box-shadow: 0 70px 30px 0 rgba(0, 0, 0, 0.1);
+                        background: rgba(255, 255, 255, 0.15);
+                        outline: none;
+                        font-family: var(--font-family);
+                        font-weight: 400;
+                        font-size: 20px;
+                        color: rgba(255, 255, 255, 0.5);
+                        &:last-child {
+                            @include size(463px, 99px, 463px);
+                            &[type="text"] {
+                                text-indent: 20px;
+                                padding-bottom: 20px;
+                                box-sizing: border-box;
+                            }
+                        }
+                        &::placeholder {
+                            font-family: var(--font-family);
+                            font-weight: 400;
+                            font-size: 20px;
+                            color: rgba(255, 255, 255, 0.3);
+                            text-align: justify;
+                            transition: all .5s ease;
+                        }
+                        &:hover::placeholder {
+                            opacity: 0.5; /* Измененное значение прозрачности при наведении */
+                            text-indent: 50px; /* Измененное значение отступа при наведении */
+                        }
+                        &[type="email"],
+                        &[type="password"] {
+                            text-indent: 20px;
+                            box-sizing: border-box; /* Добавленное свойство */
+                        }
+                    }
+                }
+                button {
+                    @include size(210px, 33px, 210px);
+                    border-radius: 25px;
+                    border: none;
+                    cursor: pointer;
+                    background: rgba(217, 217, 217, 0.1);
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 20px;
+                    text-align: center;
+                    color: rgba(255, 255, 255, 0.5);
+                    transition: all 0.5s ease;
+                    &:hover {
+                        background: rgba(217, 217, 217, 0.4);
+                        color: rgba(255, 255, 255, 0.8);
+                        box-shadow:
+                            -1px 2px 10px 0 #009bcc,
+                            1px -2px 10px 0 #ff00f5;
+                    }
+                }
+            }
+        }
+        h2 {
+            @include font(700, 48px);
+            position: absolute;
+            margin: 2.8% 1050px 27% 209px;
+            z-index: 3;
+            &::before,
+            &::after {
+                content: "";
+                position: fixed;
+                margin: 2.8% 0 0 19%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                display: block;
+            }
+        }
+    }
+    .main--section--map {
+        @include center(column);
+        position: relative;
+        margin-top: 120px;
+        h1 {
+            @include font(700, 64px);
+        }
+        .section--map--content {
+            @include size(1000px, 500px, 1000px);
+            background-image: url("../img/map.png");
+            border-radius: 50px;
+            margin-top: 87px;
+            box-shadow:
+                20px 35px 100px 0 rgba(0, 155, 204, 0.5),
+                -35px -20px 100px 0 rgba(255, 0, 245, 0.25);
+        }
+    }
+    footer {
+        @include size(100%, 301px, 100%);
+        margin-top: 107px;
+        .footer--text--main {
+            display: grid;
+            grid-template-columns: 20% 50% 15%;
+            justify-content: center;
+            height: 145px;
+            margin-top: 30px;
+            .text--main--column {
+                display: flex;
+                flex-direction: column;
+                gap: 36px;
+                h2 {
+                    @include font(700, 24px);
+                }
+                a {
+                    @include font(700, 20opx);
+                    letter-spacing: 0.05em;
+                    color: rgba(255, 255, 255, 0.7);
+                    text-wrap: nowrap;
+                    text-decoration: none;
+                    transition: all 0.5s ease;
+
+                    &:hover {
+                        color: rgba(255, 255, 255, 0.9);
+                    }
+                }
+                p {
+                    display: grid;
+                    gap: 5px;
+                    font-family: var(--font-family);
+                    font-weight: 700;
+                    font-size: 20px;
+                    letter-spacing: 0.05em;
+                    color: rgba(255, 255, 255, 0.7);
+                    transition: all 0.5s ease;
+
+                    &:hover {
+                        color: rgba(255, 255, 255, 0.9);
+                    }
+                }
+            }
+        }
+        .footer--text--submain {
+            @include font(600, 16px);
+            color: rgba(255, 255, 255, 0.3);
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            position: absolute;
+            margin: 20px 20px;
+            text-wrap: nowrap;
+            bottom: 0;
+            gap: 40%;
+            transition: all 0.5s ease;
+            cursor: pointer;
+            &:hover {
+                color: rgba(255, 255, 255, 0.6);
+            }
+        }
+    }
+}
+
+.animate {
+    animation: opacityText 10s infinite;
+}
+
+@keyframes animInput {
+    from {
+        text-indent: 0px;
+        opacity: 1;
+    }
+    to {
+        text-indent: 90px;
+        opacity: 0;
+    }
+}
+
+@keyframes opacityText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
