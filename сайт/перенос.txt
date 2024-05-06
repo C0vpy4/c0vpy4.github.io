@@ -1,0 +1,342 @@
+/* Ул.Гороховая 47 */
+
+width: 132px;
+height: 20px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+//////////////////////////////////
+
+
+
+/* Сертификаты */
+
+width: 113px;
+height: 20px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+//////////
+
+
+
+
+
+
+
+/* МЫ ВИДИМ ТЕБЯ КРАСИВО */
+
+position: absolute;
+width: 536px;
+height: 51px;
+left: calc(50% - 536px/2);
+top: 496px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 141%;
+/* identical to box height, or 51px */
+
+color: #FFFFFF;
+////////////////////////
+
+
+/* Наша студия красоты превратит вас в настоящую звезду! Мы создадим идеальный образ, который подчеркнет вашу индивидуальность и придаст уверенности */
+
+position: absolute;
+width: 723px;
+height: 102px;
+left: calc(50% - 723px/2 + 0.5px);
+top: 581px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 141%;
+/* or 34px */
+text-align: center;
+
+color: #FFFFFF;
+//////////////////////////////
+
+
+
+
+
+
+
+background: #FD36D1;
+box-shadow: 0px 0px 17.4px #FD36D1;
+
+
+
+
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 141%;
+/* identical to box height, or 34px */
+text-align: center;
+
+color: #FFFFFF;
+///////////////////////////
+
+
+/* Выполняем работу быстро и качественно */
+
+width: 247px;
+height: 44px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 136%;
+/* or 22px */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/////////////////////////////
+
+
+/* МЫ ВИДИМ ТЕБЯ КРАСИВО */
+
+position: absolute;
+width: 357px;
+height: 34px;
+left: calc(50% - 357px/2 + 0.5px);
+top: 1387px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 141%;
+/* identical to box height, or 34px */
+
+color: #000000;
+
+
+................................../////////
+
+
+
+
+
+
+
+
+
+
+
+/* АКЦИЯ МАЯ! ПРИХОДИ С ПОДРУЖКОЙ И ПОЛУЧИ -500 РУБЛЕЙ ДЛЯ КАЖДОЙ ИЗ ВАС */
+
+position: absolute;
+width: 739px;
+height: 23px;
+left: 0px;
+top: 0px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 141%;
+/* identical to box height, or 23px */
+
+color: #FD36D1;
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+
+
+/* Group 28 */
+
+width: 567px;
+height: 384px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Rectangle 152 */
+
+position: absolute;
+width: 384px;
+height: 567px;
+left: 652px;
+top: 384px;
+
+/* Фон */
+background: #131313;
+box-shadow: 0px 0px 29px #FD36D1;
+transform: rotate(-90deg);
+
+
+/* Frame 79 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 173px;
+
+position: absolute;
+width: 242px;
+height: 322px;
+left: 942px;
+top: 28px;
+
+
+
+/* Frame 78 */
+
+width: 226px;
+height: 96px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Основатель студии и мастер по наращиванию ресниц */
+
+position: absolute;
+width: 236px;
+height: 69px;
+left: 0px;
+top: 50px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 141%;
+/* or 23px */
+
+color: #FFFFFF;
+
+
+
+/* Евгения */
+
+position: absolute;
+width: 107px;
+height: 34px;
+left: calc(50% - 107px/2 - 59.5px);
+top: 0px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 141%;
+/* identical to box height, or 34px */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Group 26 */
+
+width: 242px;
+height: 53px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Rectangle 128 */
+
+position: absolute;
+width: 242px;
+height: 53px;
+left: calc(50% - 242px/2);
+top: 269px;
+
+background: #FD36D1;
+box-shadow: 0px 0px 17.4px #FD36D1;
+
+
+/* ПОДРОБНЕЕ */
+
+position: absolute;
+width: 173px;
+height: 28px;
+left: calc(50% - 173px/2 + 0.5px);
+top: 281px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 141%;
+/* or 28px */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Rectangle 153 */
+
+position: absolute;
+width: 256px;
+height: 384px;
+left: 652px;
+top: 0px;
+
+background: url(6a9a9c8e-1fad-4b2e-9e1a-a71ca30dfccd.jpg);
+
+
+
+
+
+
