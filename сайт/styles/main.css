@@ -430,6 +430,7 @@
          padding: 20px 0;
      }
      .header .header--container {
+         align-items: center;
          grid-template-columns: 1fr;
          grid-auto-flow: row;
          gap: 20px;
@@ -444,6 +445,11 @@
      }
      .underheader .underheader--container {
          text-align: center;
+     }
+     .header .header--container .header--container--icons {
+         width: 100%;
+         justify-content: center;
+         margin-right: auto;
      }
      .zag {
          font-size: 24px;
@@ -534,6 +540,10 @@
      .header .header--container {
          grid-template-columns: 1fr 1fr;
          gap: 40px;
+     }
+     .header--container--icons {
+         justify-content: center;
+         margin-right: auto;
      }
      /* Стили для первого раздела */
      .underheader {

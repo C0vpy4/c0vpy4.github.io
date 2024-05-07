@@ -20,9 +20,11 @@ body {
     display: flex;
     justify-content: end;
     align-items: center;
+    padding: 0 16%;
     /* space items */
     gap: 17px;
-    margin-right: 10%;
+    width: 100%;
+    background-color: #fff;
 }
 
 .glavheader .glavheader--container {
@@ -112,39 +114,106 @@ body {
     cursor: pointer;
 }
 
-.namepage {
+main {
     display: flex;
-    justify-content: center;
     align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-inline: 10px 10px;
+}
+
+.content--container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    width: 100%;
+    margin-top: 5%;
 }
 
 .namepage {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 18px;
+    line-height: 22px;
     color: #ffff;
-    margin-left: 18%;
-    margin-top: 2%;
 }
 
 .roadpage {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 18px;
     color: #FFFFFF;
     white-space: nowrap;
 }
 
-.content {
-    background-color: #1A1A1A;
-    width: 100%;
-    height: 2538px;
-    display: flex;
+
+/* Медиа-запрос для мобильных устройств */
+
+@media (max-width: 767px) {
+    .content--container {
+        flex-direction: column;
+        gap: 5%;
+        margin-top: 2%;
+    }
+    .namepage {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .roadpage {
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+    }
 }
+
+
+/* Медиа-запрос для планшетов и настольных компьютеров */
+
+@media (min-width: 768px) {
+    .content--container {
+        /* gap: 50%; */
+        margin-top: 3%;
+    }
+    .namepage {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .roadpage {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+.cards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    gap: 10px;
+}
+
+.card--sliders--buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    gap: 1500%;
+    /* изменено значение gap */
+}
+
+
+/* .servic1 img,
+.servic2 img {
+    max-width: 100%;
+    height: auto;
+} */
 
 .name {
     font-family: 'Montserrat';
@@ -158,6 +227,7 @@ body {
 
 body {
     overflow-x: hidden;
+    background-color: #1A1A1A;
 }
 
 .zag1 {
@@ -170,13 +240,222 @@ body {
     text-transform: uppercase;
     color: #FD36D1;
     text-shadow: 0px 0px 1.6px #FD36D1;
+    align-self: self-start;
+    margin-left: 10.5%;
+    margin-top: 5%;
+}
+
+.content--container--buy {
+    display: flex;
+    flex-wrap: wrap;
+    width: 79%;
 }
 
 .content-fon {
     background-color: white;
-    width: 65%;
+    width: 100%;
     height: 200px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 60% 40%;
+    margin-top: 2%;
+    padding: 10px 10px;
+}
+
+.fon--leftSide {
     display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.con {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fon--conainer {
+    display: flex;
+    width: 100%;
+    gap: 5%;
+}
+
+.container--type {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    text-wrap: wrap;
+    text-align: start;
+}
+
+.price {
+    align-self: start;
+}
+
+.fon--rightSide {
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fon--rightSide h1 {
+    border: #FD36D1 2px solid;
+}
+
+.content--uslugi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    gap: 20px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .content-fon {
+        display: block;
+        height: auto;
+    }
+    .name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* Добавляем выравнивание по центру */
+    }
+    .fon--leftSide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        height: auto;
+    }
+    .fon--conainer {
+        display: block;
+    }
+    .con {
+        display: block;
+    }
+    .price {
+        align-self: center;
+        /* Центрируем по горизонтали */
+    }
+    .fon--rightSide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 2%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* Добавляем выравнивание по центру */
+    }
+    .price {
+        align-self: flex-start;
+        /* Возвращаем выравнивание слева */
+    }
+    .fon--rightSide {
+        display: flex;
+        align-items: end;
+        justify-content: start;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+/* Стили для устройств с шириной экрана до 768px (например, мобильные устройства) */
+
+@media only screen and (max-width: 768px) {
+    .content--container {
+        flex-direction: row;
+        /* Переключаем направление flex на вертикальное */
+        padding: 0 5%;
+        /* Уменьшаем отступы по бокам */
+    }
+    .cart-masters {
+        width: 100%;
+        /* Занимаем всю ширину экрана */
+    }
+    .cartMasters--container {
+        width: 100%;
+        /* Занимаем всю ширину экрана */
+    }
+    .butsub {
+        width: 100%;
+        /* Занимаем всю ширину экрана */
+    }
+    .cards {
+        flex-direction: row;
+        /* Переключаем направление flex на вертикальное */
+        gap: 20px;
+        /* Увеличиваем промежуток между элементами */
+    }
+    .card--sliders--buttons {
+        display: none;
+        position: absolute;
+        /* Отменяем абсолютное позиционирование */
+        gap: 300%;
+        /* Увеличиваем промежуток между элементами */
+    }
+}
+
+
+/* Стили для устройств с шириной экрана от 769px и выше */
+
+@media only screen and (min-width: 769px) {
+    .content--container {
+        padding: 0 8%;
+        /* Возвращаем обычные отступы по бокам */
+    }
+    .cart-masters {
+        width: 85%;
+        /* Возвращаем обычную ширину */
+    }
+    .cartMasters--container {
+        width: 80%;
+        /* Возвращаем обычную ширину */
+    }
+    .butsub {
+        width: 40%;
+        /* Возвращаем обычную ширину */
+    }
+    .cards {
+        flex-direction: row;
+        /* Возвращаем направление flex на горизонтальное */
+        /* Возвращаем обычный промежуток между элементами */
+    }
+    .card--sliders--buttons {
+        position: absolute;
+        /* Возвращаем абсолютное позиционирование */
+        /* Возвращаем обычный промежуток между элементами */
+    }
+}
+
+.naming {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 300px;
+    width: 100%;
 }
 
 .namecombo {
@@ -186,8 +465,6 @@ body {
     font-size: 20px;
     line-height: 141%;
     color: black;
-    margin-top: 1%;
-    margin-left: 4%;
 }
 
 .sctext1 {
@@ -197,7 +474,6 @@ body {
     font-size: 16px;
     line-height: 141%;
     color: #000000;
-    white-space: nowrap;
 }
 
 .sctext2 {
@@ -207,7 +483,6 @@ body {
     font-size: 16px;
     line-height: 141%;
     color: #000000;
-    white-space: nowrap;
 }
 
 .sctext3 {
@@ -217,7 +492,6 @@ body {
     font-size: 16px;
     line-height: 141%;
     color: #000000;
-    white-space: nowrap;
 }
 
 .sctext4 {
@@ -227,7 +501,6 @@ body {
     font-size: 16px;
     line-height: 141%;
     color: #000000;
-    white-space: nowrap;
 }
 
 .price {
@@ -240,144 +513,6 @@ body {
 }
 
 .butsub {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 141%;
-    text-align: center;
-    color: #FFFFFF;
-    background: #FD36D1;
-    box-shadow: 0px 0px 17.4px #FD36D1;
-    height: 3.0em;
-    width: 15em;
-    text-decoration: none !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.content-fon2 {
-    background-color: white;
-    width: 31%;
-    height: 356px;
-    display: flex;
-}
-
-.namecombo2 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 141%;
-    color: black;
-    white-space: nowrap;
-}
-
-.sctext5 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 141%;
-    color: #000000;
-    white-space: nowrap;
-}
-
-.sctext7 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 141%;
-    color: #000000;
-    white-space: nowrap;
-}
-
-.sctext6 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 141%;
-    color: #000000;
-    white-space: nowrap;
-}
-
-.butsub2 {
-    margin-top: 46%;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 141%;
-    text-align: center;
-    color: #FFFFFF;
-    background: #FD36D1;
-    box-shadow: 0px 0px 17.4px #FD36D1;
-    height: 3.0em;
-    width: 15em;
-    text-decoration: none !important;
-}
-
-.price2 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 141%;
-    color: #000000;
-}
-
-.content-fon3 {
-    background-color: white;
-    width: 31%;
-    height: 356px;
-    display: flex;
-}
-
-.namecombo3 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 141%;
-    color: black;
-    white-space: nowrap;
-}
-
-.sctext8 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 141%;
-    color: #000000;
-    white-space: nowrap;
-}
-
-.sctext9 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 141%;
-    color: #000000;
-    white-space: nowrap;
-}
-
-.price3 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 141%;
-    color: #000000;
-}
-
-.butsub3 {
-    margin-left: -32%;
-    margin-top: 46%;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -404,7 +539,7 @@ body {
     text-shadow: 0px 0px 1.6px #FD36D1;
 }
 
-.serviseall {
+.serviseal {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -414,7 +549,7 @@ body {
 }
 
 .line {
-    width: 272%;
+    width: 100%;
     /* Задайте нужную ширину линии */
     height: 1px;
     /* Задайте нужную высоту линии */
@@ -434,6 +569,9 @@ body {
 }
 
 .serviseall2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -443,7 +581,7 @@ body {
 }
 
 .line2 {
-    width: 233%;
+    width: 100%;
     /* Задайте нужную ширину линии */
     height: 1px;
     /* Задайте нужную высоту линии */
@@ -472,15 +610,99 @@ body {
 }
 
 .line3 {
-    width: 593%;
+    width: 100%;
     /* Задайте нужную ширину линии */
     height: 1px;
     /* Задайте нужную высоту линии */
     background-color: white;
 }
 
+
+/* Адаптивность для мобильных устройств */
+
+@media (max-width: 767px) {
+    .naming {
+        gap: 10px;
+    }
+    .content--uslugi {
+        margin-top: 10%;
+    }
+    .serviseall2 {
+        font-size: 14px;
+    }
+}
+
+
+/* Адаптивность для планшетов */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .content--uslugi {
+        margin-top: 7%;
+    }
+    .serviseall2 {
+        font-size: 15px;
+    }
+}
+
+
+/* Адаптивность для больших экранов */
+
+@media (min-width: 1024px) {
+    .content--uslugi {
+        margin-top: 5%;
+    }
+    .serviseall2 {
+        font-size: 16px;
+    }
+}
+
+
+/* Адаптивность для ценовых блоков */
+
+@media (max-width: 767px) {
+    .naming {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .nameservice,
+    .priceservice {
+        margin-bottom: 5px;
+    }
+}
+
+
+/* Дополнительная адаптивность для ценовых блоков на планшетах */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .nameservice,
+    .priceservice {
+        text-align: center;
+    }
+}
+
+.underscrollphoto {
+    display: grid;
+    align-items: center;
+    margin-top: 5%;
+    background: url(../img/41.png);
+    background-size: cover;
+    -moz-background-size: cover;
+    /* Firefox 3.6 */
+    background-position: center;
+    /* Internet Explorer 7/8 */
+    padding: 61px 0 152px 0;
+}
+
+.underscrollphoto--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .ustext {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
@@ -489,16 +711,16 @@ body {
     color: #ffff;
 }
 
-.butsubunder {
-    background: #FD36D1;
-    box-shadow: 0px 0px 17.4px #FD36D1;
-    font-family: 'Montserrat';
+.butsub2 {
+    background: #fd36d1;
+    box-shadow: 0px 0px 17.4px #fd36d1;
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 141%;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-top: 5.5%;
     position: relative;
     text-decoration: none !important;
@@ -506,6 +728,7 @@ body {
     height: 2.5em;
     width: 18em;
     line-height: 2.5em;
+    margin-top: 96px;
 }
 
 .footer {
@@ -590,4 +813,206 @@ body {
 .underphoto {
     display: block;
     height: auto;
+}
+
+@media (max-width: 767px) {
+    /* Глобальные стили */
+    html,
+    body {
+        width: 100%;
+        height: auto;
+        overflow-x: hidden;
+    }
+    /* Стили для шапки */
+    .glavheader {
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0;
+    }
+    .header {
+        height: auto;
+        padding: 20px 0;
+    }
+    .header .header--container {
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+        gap: 20px;
+    }
+    .header .header--container nav {
+        flex-direction: column;
+    }
+    .header .header--container .header--container--icons {
+        width: 100%;
+        justify-content: center;
+        margin-right: auto;
+    }
+    /* Стили для первого раздела */
+    .underheader {
+        height: auto;
+        padding: 50px 0;
+    }
+    .underheader .underheader--container {
+        text-align: center;
+    }
+    .zag {
+        font-size: 24px;
+    }
+    .utext {
+        font-size: 18px;
+    }
+    .butsub {
+        font-size: 18px;
+        width: 100%;
+        max-width: 300px;
+    }
+    /* Стили для второго раздела */
+    .whyarewe {
+        grid-template-columns: 1fr;
+    }
+    .whyarewe .whyarewe--container {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    /* Стили для четвертого раздела */
+    .runningline {
+        height: 60px;
+        margin-top: 3%;
+        overflow: hidden;
+    }
+    .promo-text {
+        font-size: 12px;
+        padding: 10px;
+        animation: runningline 20s linear infinite;
+        white-space: nowrap;
+    }
+    /* Стили для пятого раздела */
+    .underscrollphoto {
+        padding: 30px 0;
+    }
+    .ustext {
+        font-size: 18px;
+    }
+    .butsub2 {
+        font-size: 18px;
+        width: 100%;
+        max-width: 300px;
+        margin-top: 30px;
+    }
+    #map {
+        height: 200px;
+    }
+    /* Стили для подвала */
+    .footer {
+        height: auto;
+        padding: 30px 0;
+    }
+    .footer--container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer--container .footer--container--logo--text--container {
+        gap: 30px;
+    }
+    .footer--container .footer--container--logo--text--container .footer--text--container {
+        gap: 30px;
+    }
+    .footer--container .footer--container--icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer--aside--text {
+        margin-top: 30px;
+    }
+}
+
+
+/* Стили для планшетов */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Глобальные стили */
+    html,
+    body {
+        width: 100%;
+        height: auto;
+        overflow-x: hidden;
+    }
+    /* Стили для шапки */
+    .header {
+        height: auto;
+        padding: 30px 0;
+    }
+    .header .header--container {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    /* Стили для первого раздела */
+    .underheader {
+        height: auto;
+        padding: 80px 0;
+    }
+    .zag {
+        font-size: 28px;
+    }
+    .utext {
+        font-size: 20px;
+    }
+    .butsub {
+        font-size: 20px;
+        max-width: 400px;
+    }
+    /* Стили для второго раздела */
+    .whyarewe {
+        grid-template-columns: 1fr 1fr;
+    }
+    .whyarewe .whyarewe--container {
+        flex-direction: row;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    /* Стили для четвертого раздела */
+    .runningline {
+        height: 80px;
+        margin-top: 4%;
+    }
+    .promo-text {
+        font-size: 16px;
+        padding: 15px;
+    }
+    /* Стили для пятого раздела */
+    .underscrollphoto {
+        padding: 60px 0;
+    }
+    .ustext {
+        font-size: 20px;
+    }
+    .butsub2 {
+        font-size: 20px;
+        max-width: 400px;
+        margin-top: 40px;
+    }
+    #map {
+        height: 400px;
+    }
+    /* Стили для подвала */
+    .footer {
+        height: auto;
+        padding: 40px 0;
+    }
+    .footer--container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer--container .footer--container--logo--text--container {
+        gap: 40px;
+    }
+    .footer--container .footer--container--logo--text--container .footer--text--container {
+        gap: 40px;
+    }
+    .footer--container .footer--container--icons {
+        flex-wrap: nowrap;
+    }
+    .footer--aside--text {
+        margin-top: 0;
+    }
 }
