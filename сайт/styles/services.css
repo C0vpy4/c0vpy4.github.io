@@ -513,6 +513,8 @@ body {
 }
 
 .butsub {
+    display: grid;
+    align-items: center;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
