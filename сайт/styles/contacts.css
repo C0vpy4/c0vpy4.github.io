@@ -155,7 +155,7 @@ body {
 }
 
 .overfooter .left--content {
-    margin-top: 16%;
+    margin-top: 5%;
 }
 
 .overfooter .left--content .middle--content {
@@ -194,7 +194,7 @@ body {
 }
 
 .overfooter .right--content {
-    margin-top: 16%;
+    margin-top: 5%;
     display: flex;
     height: 50%;
 }
@@ -246,6 +246,7 @@ body {
 .footer--aside--text {
     display: flex;
     flex-direction: column;
+    color: #fff;
     gap: 10px;
     text-align: center;
     margin-top: 133px;
@@ -538,9 +539,7 @@ body {
         gap: 5%;
         height: 450px;
     }
-    .overfooter .left--content {
-        margin-left: 200px;
-    }
+    .overfooter .left--content {}
     .overfooter .left--content .middle--content {
         gap: 0%;
     }

@@ -779,6 +779,7 @@ body {
 
 .footer--aside--text {
     display: flex;
+    color: #fff;
     flex-direction: column;
     gap: 10px;
     text-align: center;
