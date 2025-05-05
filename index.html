@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Download Page</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background-color: #f5f5f5;
-      }
-      .download-button {
-        padding: 15px 30px;
-        font-size: 18px;
-        background-color: #4caf50;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-      }
-      .download-button:hover {
-        background-color: #45a049;
-      }
-    </style>
-  </head>
-  <body style="display: flex; gap: 20px; flex-direction: row;">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+
+    .download-button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .download-button:hover {
+      background-color: #45a049;
+    }
+    .container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 10px 10px;
+    }
+  </style>
+</head>
+
+<body style="display: flex; gap: 20px; flex-direction: row;">
+  <div class="container">
     <a href="ebat.zip" download class="download-button">Скачать от Артёма</a>
     <a href="appointments.zip" download class="download-button">Скачать от Игоря</a>
-    <a href="Документация.pdf" download class="download-button">Скачать документаци</a>
-    <a href="/doc/index.html">Смотреть документацию онлайн</a>
-  </body>
+    <a href="ebat (2).zip" download class="download-button">4 билет</a>
+  </div>
+  <a href="Документация.pdf" download class="download-button">Скачать документаци</a>
+  <a href="/doc/index.html">Смотреть документацию онлайн</a>
+</body>
+
 </html>
