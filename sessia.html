@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лендинг Шаблон</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      header,
+      section {
+        padding: 60px 20px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      nav {
+        background-color: #222;
+        color: #fff;
+        padding: 15px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 20px;
+      }
+
+      .hero {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+      }
+
+      section h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 40px;
+      }
+
+      .about,
+      .services,
+      .contact {
+        background-color: #fff;
+        margin-top: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .service {
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      .contact form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .contact input,
+      .contact textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+
+      .contact button {
+        background-color: #667eea;
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .contact button:hover {
+        background-color: #556cd6;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #222;
+        color: #fff;
+      }
+
+      @media (max-width: 600px) {
+        .hero h1 {
+          font-size: 1.8rem;
+        }
+
+        nav .container {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        nav a {
+          margin: 10px 0 0 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="logo">Логотип</div>
+        <div>
+          <a href="#about">О нас</a>
+          <a href="#services">Услуги</a>
+          <a href="#contact">Контакты</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="container">
+        <h1>Ваш заголовок лендинга</h1>
+        <p>Краткое описание или слоган компании / продукта</p>
+      </div>
+    </header>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2>О нас</h2>
+        <p>
+          Этот шаблон можно использовать для любой темы — бизнеса, портфолио,
+          продукта или сервиса. Здесь расскажите о себе или вашей компании.
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Наши услуги</h2>
+        <div class="services-grid">
+          <div class="service">
+            <h3>Услуга 1</h3>
+            <p>Описание первой услуги или преимущества.</p>
+          </div>
+          <div class="service">
+            <h3>Услуга 2</h3>
+            <p>Описание второй услуги или преимущества.</p>
+          </div>
+          <div class="service">
+            <h3>Услуга 3</h3>
+            <p>Описание третьей услуги или преимущества.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Связаться с нами</h2>
+        <form>
+          <input type="text" placeholder="Ваше имя" required />
+          <input type="email" placeholder="Ваш email" required />
+          <textarea rows="5" placeholder="Сообщение" required></textarea>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Все права защищены.</p>
+    </footer>
+  </body>
+</html>
